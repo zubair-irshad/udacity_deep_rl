@@ -12,3 +12,10 @@ Introduction to Deep RL
 **Temporal Difference Methods**
 
 - Implementation of [Sarsa](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf#page=154), [Q-learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf#page=157) and [Expected-Sarsa](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf#page=157)  for the enviornment [CliffWalking](https://github.com/openai/gym/blob/master/gym/envs/toy_text/cliffwalking.py)
+
+Deep Value Iterations
+-----------------------
+
+**Deep Q Network - DQN**
+
+- Implementation of [Deep Q Network](https://arxiv.org/abs/1312.5602) for the enviornment [Lunar Lander](https://gym.openai.com/envs/LunarLander-v2/)
