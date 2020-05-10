@@ -49,7 +49,7 @@ Deep Q Learning improves upon the classical Q-learning algorithm which builds up
 
 ### Results
 
-
+![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/Projects/1-%20Navigation/logging/plot.jpg "Results")
 
 ### Future Work
 
