@@ -57,4 +57,17 @@ python eval.py
 **nav_agent.py :** Implementation of Deep deterministic policy gradient agent. Helpful methods include 'act' for getting deterministic polocy with some added OU Noise, 'step' to store data in a replay buffer and learn every few timestep and Replay Buffer Class
 **monitor.py :** Implementation includes running an agent through 'num_episodes' inside a simualtion 
 
+### Algorithm Implementation Details
+
+This work implements a deep deterministic policy gradient algorithm. This is an off-polocy algorithm which is based on the actor-critic method. 
+
+
+### Results
+
+![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/Projects/1-%20Navigation/logging/plot.jpg "Results")
+
+### Future Work
+
+- [Solve the crawler enviornment using DDPG](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#crawler)
+
 
