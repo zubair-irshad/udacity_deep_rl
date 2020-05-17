@@ -60,11 +60,11 @@ python eval.py
 ### Algorithm Implementation Details
 
 This work implements a deep deterministic policy gradient algorithm. This is an off-polocy algorithm which is based on the actor-critic method. 
-
+![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/4-Projects/2-Continuous_Control/logging/DDPG_algorithm.svg "Algorithm")
 
 ### Results
 
-![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/Projects/1-%20Navigation/logging/plot.jpg "Results")
+![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/4-Projects/2-Continuous_Control/logging/plot.jpg "Results")
 
 ### Future Work
 
