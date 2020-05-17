@@ -55,12 +55,12 @@ python eval.py
 
 This work implements a Deep Q-Network from Deep Mind's paper [Playing Atari with Deep Reinforcement Learning](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf).
 
-![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/4-Projects/1-%20Navigation/logging/dqn_algorithm.png "Algorithm")
+![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/4-Projects/1-Navigation/logging/dqn_algorithm.png "Algorithm")
 
 
 ### Results
 
-![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/4-Projects/1-%20Navigation/logging/plot.jpg "Results")
+![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/4-Projects/1-Navigation/logging/plot.jpg "Results")
 
 ### Future Work
 
