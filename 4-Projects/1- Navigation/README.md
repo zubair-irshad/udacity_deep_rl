@@ -54,7 +54,7 @@ python eval.py
 
 ### Algorithm Implementation Details
 
-Deep Q Learning improves upon the classical Q-learning algorithm which builds upon value iteration and bellman equation to update the action-value of each visited state in the network. Using feedback signals from the enviornment, the agent updates its action-value pair and selects the action with the highest action-value in an uncertain scenario. Deep Q Leanring combines this classical methodology with the power of Deep Networks to achieve this task in continous enviornments. 
+This work implements a deep deterministic policy gradient algorithm. This is an off-polocy algorithm which is based on the actor-critic method. 
 
 
 ### Results
@@ -63,7 +63,5 @@ Deep Q Learning improves upon the classical Q-learning algorithm which builds up
 
 ### Future Work
 
-- [Prioritized Experienced Repaly](https://arxiv.org/abs/1511.05952)
-- [Dueling Q Networks](https://arxiv.org/abs/1511.06581)
-- [Double Q Learning](https://arxiv.org/abs/1509.06461)
+- [Solve the crawler enviornment using DDPG](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#crawler)
 
