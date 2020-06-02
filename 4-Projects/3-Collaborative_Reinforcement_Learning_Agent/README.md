@@ -6,9 +6,9 @@
 
 # Project 3: Collaboration and Competition
 
-### Introduction
+### Problem Statement
 
-For this project, you will work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
+For this project, we will work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
 
 ![Trained Agent][image1]
 
@@ -23,9 +23,13 @@ The task is episodic, and in order to solve the environment, your agents must ge
 
 The environment is considered solved, when the average (over 100 episodes) of those **scores** is at least +0.5.
 
-### Getting Started
+### Instructions to reproduce results
 
-1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+- Clone this repo 
+
+- Complete all dependencies here: [Enviornment dependencies](https://github.com/udacity/deep-reinforcement-learning/#dependencies)
+
+- Download the respective UnityML Navigation Environment from the list below and extract it under ./2-Continuous_Control
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
@@ -35,28 +39,31 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip) to obtain the "headless" version of the environment.  You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent.  (_To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
 
-2. Place the file in the DRLND GitHub repository, in the `p3_collab-compet/` folder, and unzip (or decompress) the file. 
+### Train agent from scratch
+```
+python main.py
+```
 
-### Instructions
+### Evaulate a trained model
+```
+python eval.py
+```
 
-Follow the instructions in `Tennis.ipynb` to get started with training your own agent!  
+### Code Structure (Helpful if you would like to make changes and try out different algorithms/architecture)
+**model.py :** Actor-Critic model 
+**ddpg_agent.py :** Implementation of Deep deterministic policy gradient agent. Helpful methods include 'act' for getting deterministic polocy with some added OU Noise, 'step' to store data in a replay buffer and learn every few timestep and Replay Buffer Class
+**monitor.py :** Implementation includes running an agent through 'num_episodes' inside a simualtion 
 
-### (Optional) Challenge: Crawler Environment
+### Algorithm Implementation Details
 
-After you have successfully completed the project, you might like to solve the more difficult **Soccer** environment.
+This work implements a deep deterministic policy gradient algorithm. This is an off-polocy algorithm which is based on the actor-critic method. 
+![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/4-Projects/2-Continuous_Control/logging/DDPG_algorithm.svg "Algorithm")
 
-![Soccer][image2]
+### Results
 
-In this environment, the goal is to train a team of agents to play soccer.  
+![alt text](https://github.com/zubair-irshad/udacity_deep_rl/tree/master/4-Projects/3-Collaborative_Reinforcement_Learning_Agent/logging/plot.jpg "Results")
 
-You can read more about this environment in the ML-Agents GitHub [here](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#soccer-twos).  To solve this harder task, you'll need to download a new Unity environment.  (**Note**: Udacity students should not submit a project with this new environment.)
+### Future Work
 
-You need only select the environment that matches your operating system:
-- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Linux.zip)
-- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer.app.zip)
-- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Windows_x86.zip)
-- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Windows_x86_64.zip)
+- [Solve the crawler enviornment using DDPG](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#crawler)
 
-Then, place the file in the `p3_collab-compet/` folder in the DRLND GitHub repository, and unzip (or decompress) the file.  Next, open `Soccer.ipynb` and follow the instructions to learn how to use the Python API to control the agent.
-
-(_For AWS_) If you'd like to train the agents on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Linux_NoVis.zip) to obtain the "headless" version of the environment.  You will **not** be able to watch the agents without enabling a virtual screen, but you will be able to train the agents.  (_To watch the agents, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
