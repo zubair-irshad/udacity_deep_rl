@@ -52,7 +52,7 @@ python eval.py
 
 ### Code Structure (Helpful if you would like to make changes and try out different algorithms/architecture)
 **model.py :** Actor-Critic model 
-**nav_agent.py :** Implementation of Deep deterministic policy gradient agent. Helpful methods include 'act' for getting deterministic polocy with some added OU Noise, 'step' to store data in a replay buffer and learn every few timestep and Replay Buffer Class
+**ddpg_agent.py :** Implementation of Deep deterministic policy gradient agent. Helpful methods include 'act' for getting deterministic polocy with some added OU Noise, 'step' to store data in a replay buffer and learn every few timestep and Replay Buffer Class
 **monitor.py :** Implementation includes running an agent through 'num_episodes' inside a simualtion 
 
 ### Algorithm Implementation Details

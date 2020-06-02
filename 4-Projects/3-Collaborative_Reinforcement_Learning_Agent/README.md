@@ -61,7 +61,7 @@ This work implements a deep deterministic policy gradient algorithm. This is an 
 
 ### Results
 
-![alt text](https://github.com/zubair-irshad/udacity_deep_rl/tree/master/4-Projects/3-Collaborative_Reinforcement_Learning_Agent/logging/plot.jpg "Results")
+![alt text](https://github.com/zubair-irshad/udacity_deep_rl/blob/master/4-Projects/3-Collaborative_Reinforcement_Learning_Agent/logging/plot.jpg "Results")
 
 ### Future Work
 
